@@ -25,12 +25,6 @@ const questions = [
 
     {
         type: "input",
-        name: "tableOfContents",
-        message: "Add a table of contents (Optional) ",
-    },
-
-    {
-        type: "input",
         name: "installation",
         message: "What are the steps required to install your project?",
     },

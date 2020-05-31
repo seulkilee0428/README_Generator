@@ -1,5 +1,7 @@
 function generateMarkdown(data) {
   return `
+  ![GitHub Activity](https://img.shields.io/github/commit-activity/m/seulkilee0428/README_Generator?style=plastic)
+
 # ${data.title}
 * ${data.description}
 
@@ -12,9 +14,7 @@ function generateMarkdown(data) {
 * [Question](#question) 
 ## __Installation__ :               
 * ${data.installation}
-\`\`\`  
-npm i
-\`\`\`
+
 ## __Usage__ :                   
 * ${data.usage}
 ## __License__ :                    
@@ -23,9 +23,7 @@ npm i
 * ${data.contributing}
 ## __Test__ :                      
 * ${data.tests}
-\`\`\`  
-npm run test
-\`\`\`
+
 
 `;
 }
