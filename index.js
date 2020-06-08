@@ -13,7 +13,7 @@ const questions = [
     },
     {
         type: "input",
-        name: "userName",
+        name: "username",
         message: "What is your username on GitHub?",
     },
 
@@ -52,6 +52,11 @@ const questions = [
         name: "tests",
         message: "Add your test info."
     },
+    {
+        type: "input",
+        name: "email",
+        message: "Add your email address."
+    },
 
 
 ];
@@ -64,11 +69,11 @@ function writeToFile(fileName, data) {
 
 function init() {
     return inquirer.prompt(questions)
-        .then(function (answers) {
-            markdown(answers);
-            const userMakrdown = markdown(answers);
-            api.getUser(answers.username);
-            writeToFile(`${answers.fileName}.md`, userMakrdown);
+        .then(function (data) {
+            markdown(data);
+            const userMakrdown = markdown(data);
+            api.getUser(data.username);
+            writeToFile(`${data.title}.md`, userMakrdown);
             console.log("Success!");
         })
         .catch(function (err) {

@@ -1,6 +1,8 @@
 function generateMarkdown(data) {
+  var profilePicture = "https://avatars0.githubusercontent.com/u/47539186?s=400&u=da99dfaefc819f5ec9be6126240f076e14c18aff&v=4";
+
   return `
-  ![GitHub Activity](https://img.shields.io/github/commit-activity/m/seulkilee0428/README_Generator?style=plastic)
+  ![GitHub Activity](https://img.shields.io/github/commit-activity/m/seulkilee0428/README_Generator?style=plastic);
 
 # ${data.title}
 * ${data.description}
@@ -13,7 +15,7 @@ function generateMarkdown(data) {
 * [Test](#test)
 * [Question](#question) 
 ## __Installation__ :               
-* ${data.installation}
+* ${ data.installation}
 
 ## __Usage__ :                   
 * ${data.usage}
@@ -24,6 +26,15 @@ function generateMarkdown(data) {
 ## __Test__ :                      
 * ${data.tests}
 
+## __Questions__ :
+* Profile Pic
+ - ![Image](${profilePicture})
+
+* Username
+ - ${data.username}
+
+* Email
+ - ${data.email}
 
 `;
 }
