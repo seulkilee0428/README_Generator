@@ -21,7 +21,7 @@
 ## __Contributor__ :              
 * N/A
 ## __Test__ :                      
-* N/A
+![GIF](https://github.com/seulkilee0428/README_Generator/blob/master/utils/README%20Generator.gif);
 
 ## __Questions__ :
 * Profile Pic
